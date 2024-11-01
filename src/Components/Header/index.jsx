@@ -17,8 +17,8 @@ height: 50vh;
     -webkit-box-shadow: 0px -83px 77px 23px rgba(0,0,0,1) inset;
     -moz-box-shadow: 0px -83px 77px 23px rgba(0,0,0,1) inset; */
     box-shadow: 0px -83px 131px 65px rgba(0,0,0,1) inset;
--webkit-box-shadow: 0px -83px 131px 65px rgba(0,0,0,1) inset;
--moz-box-shadow: 0px -83px 131px 65px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 0px -83px 131px 65px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 0px -83px 131px 65px rgba(0,0,0,1) inset;
 `;
 export default function Header() {
     return(
