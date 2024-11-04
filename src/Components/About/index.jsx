@@ -193,7 +193,7 @@ export default function About() {
           <Line1>Olá, sou a Gislane Lima!</Line1>
           <Line2>Mas pode me chamar de Gisa...</Line2>
         </AboutText>
-        <img src="./perfil.jpg" alt="perfil" />
+        <img src="" alt="perfil" />
       </AboutPerfil>
       <MainAbout>
         <ContainerImg>
@@ -209,12 +209,11 @@ export default function About() {
               responsivas e modernas
             </p>
         <div>
-          <button
-          onClick="https://github.com/GislanePires"
-          >
+          <button 
+          onClick={() => window.open("https://github.com/GislanePires", "_blank")}>
             <GithubIcon />
           </button>
-          <button>
+          <button onClick={() => window.open("https://www.linkedin.com/in/gislanepires", "_blank")}>
             <LinkedinIcon />
           </button>
         </div>
