@@ -24,11 +24,17 @@ li {
     list-style: none;
     font-family: "Anek Devanagari", sans-serif;
     font-size: 1.5rem;
-    font-weight: 800;
     
     a {
         color: aliceblue;
         text-decoration:none;
+        transition: all 0.6s ease;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            color: #966cfc;
+        }
 
     }
 

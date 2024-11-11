@@ -1,5 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { SlSocialGithub, SlSocialLinkedin } from "react-icons/sl";
+import Projects from "../Projects";
+import Slider from "../Slider";
 
 const blinkCursor = keyframes`
     from {
@@ -111,6 +113,8 @@ const MainAbout = styled.section`
   border-radius: 0.3rem;
   border: solid 2px #242424;
   font-family: "Anek Devanagari", sans-serif;
+  /* position: absolute;
+  top: 45rem; */
  
 
   img {
@@ -184,7 +188,12 @@ const Emphasis = styled.p`
     /* font-weight: 600; */
     font-size: 1.3em;
 `;
-
+const ProjectSection = styled.section`
+height: 60vh;
+width: 100%;
+background-color: rgb(0, 0, 0);
+color: #fff;
+`;
 export default function About() {
   return (
     <AboutSection id="sobre">
@@ -205,7 +214,7 @@ export default function About() {
             <p>
               Meu nome é Gislane Lima, ou "Gisa" - como a maioria das pessoas me
               conhece. Atualmente sou estudante de Desenvolvimento de sistemas e
-              UI Designer. Gosto de desenolver interfaces interativas,
+              UI Designer. Gosto de desenvolver interfaces interativas,
               responsivas e modernas
             </p>
         <div>
@@ -220,6 +229,11 @@ export default function About() {
           </MainText>
         </ContainerImg>
       </MainAbout>
+        <ProjectSection id="projetos">
+          <h2>Projetos</h2>
+          {/* <Projects /> */}
+          <Slider />
+        </ProjectSection>
     </AboutSection>
   );
 }
