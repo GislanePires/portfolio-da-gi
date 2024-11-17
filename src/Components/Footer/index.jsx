@@ -1,7 +1,8 @@
 import styled from "styled-components";
 const FooterSection = styled.section`
 width: 100%;
-height: 30vh;
+height: 40vh;
+display: flex;
 background-image:
 linear-gradient(
       rgba(0, 0, 0, 0.6),

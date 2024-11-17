@@ -14,7 +14,6 @@ function App() {
     <Header />
     <About />
     <Footer />
-      {/* <h1>sou o app</h1> */}
     </>
   )
 }

@@ -49,7 +49,7 @@ const AboutSection = styled.section`
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: rgb(0, 0, 0);
 `;
 const AboutText = styled.article`
@@ -107,7 +107,7 @@ const MainAbout = styled.section`
   justify-content: space-around;
   color: rgba(255, 255, 255, 0.75);
   width: 60vw;
-  height: 80vh;
+  height: 100vh;
   background-color: #151515;
   padding: 3rem;
   border-radius: 0.3rem;
@@ -186,10 +186,10 @@ const Emphasis = styled.p`
 const ProjectSection = styled.section`
   height: 100vh;
   width: 100%;
-  background-color: rgb(2 ,2, 7);
+  /* background-color: rgb(2 ,2, 7);
   box-shadow: 0px -83px 131px 65px rgba(0, 0, 0, 1) inset;
   -webkit-box-shadow: 0px -83px 131px 65px rgba(0, 0, 0, 1) inset;
-  -moz-box-shadow: 0px -83px 131px 65px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px -83px 131px 65px rgba(0, 0, 0, 1); */
   color: #fff;
   padding: 5%;
   display: flex;

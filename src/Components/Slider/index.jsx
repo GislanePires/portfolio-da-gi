@@ -12,12 +12,6 @@ const SliderSection = styled.section`
   text-align: center;
 `;
 
-const SliderTitle = styled.h3`
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-`;
-
 const StyledSwiper = styled(Swiper)`
   width: 80%;
   padding-top: 50px;
@@ -73,7 +67,6 @@ export default function Slider() {
 
   return (
     <SliderSection>
-      <SliderTitle>Sessão Slider</SliderTitle>
 
       <StyledSwiper
         effect={"coverflow"}
