@@ -113,17 +113,14 @@ const MainAbout = styled.section`
   border-radius: 0.3rem;
   border: solid 2px #242424;
   font-family: "Anek Devanagari", sans-serif;
-  /* position: absolute;
-  top: 45rem; */
- 
 
   img {
     width: 30vw;
     height: 50vh;
     border-radius: 0.3rem;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
   div {
     display: flex;
@@ -144,13 +141,13 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
       position: relative;
       bottom: 1.2rem;
       transition: all 0.8s ease;
-        position: relative;
-        overflow: hidden;
+      position: relative;
+      overflow: hidden;
 
-        &:hover {
-            transform: translateY(-5px);
-            border: solid 2px #966CFC;
-        }
+      &:hover {
+        transform: translateY(-5px);
+        border: solid 2px #966cfc;
+      }
     }
   }
 `;
@@ -175,24 +172,36 @@ const MainText = styled.article`
   justify-content: space-around;
   h3 {
     color: #966cfc;
-}
-h2 {
+  }
+  h2 {
     font-size: 2.5rem;
-}
-p {
-      padding-bottom: 2rem;
-
+  }
+  p {
+    padding-bottom: 2rem;
   }
 `;
 const Emphasis = styled.p`
-    /* font-weight: 600; */
-    font-size: 1.3em;
+  font-size: 1.3em;
 `;
 const ProjectSection = styled.section`
-height: 60vh;
-width: 100%;
-background-color: rgb(0, 0, 0);
-color: #fff;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(2 ,2, 7);
+  box-shadow: 0px -83px 131px 65px rgba(0, 0, 0, 1) inset;
+  -webkit-box-shadow: 0px -83px 131px 65px rgba(0, 0, 0, 1) inset;
+  -moz-box-shadow: 0px -83px 131px 65px rgba(0, 0, 0, 1);
+  color: #fff;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  h2 {
+    text-align: center;
+    font-family: "Anek Devanagari", sans-serif;
+    font-size: 2.5rem;
+    color: var(--color-text);
+  }
 `;
 export default function About() {
   return (
@@ -217,23 +226,33 @@ export default function About() {
               UI Designer. Gosto de desenvolver interfaces interativas,
               responsivas e modernas
             </p>
-        <div>
-          <button 
-          onClick={() => window.open("https://github.com/GislanePires", "_blank")}>
-            <GithubIcon />
-          </button>
-          <button onClick={() => window.open("https://www.linkedin.com/in/gislanepires", "_blank")}>
-            <LinkedinIcon />
-          </button>
-        </div>
+            <div>
+              <button
+                onClick={() =>
+                  window.open("https://github.com/GislanePires", "_blank")
+                }
+              >
+                <GithubIcon />
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/gislanepires",
+                    "_blank"
+                  )
+                }
+              >
+                <LinkedinIcon />
+              </button>
+            </div>
           </MainText>
         </ContainerImg>
       </MainAbout>
-        <ProjectSection id="projetos">
-          <h2>Projetos</h2>
-          {/* <Projects /> */}
-          <Slider />
-        </ProjectSection>
+      <ProjectSection id="projetos">
+        <h2>Projetos</h2>
+        {/* <Projects /> */}
+        <Slider />
+      </ProjectSection>
     </AboutSection>
   );
 }

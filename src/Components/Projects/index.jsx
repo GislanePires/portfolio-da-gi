@@ -2,8 +2,10 @@ import styled from "styled-components";
 import Slider from "../Slider";
 
 const ProjectsMain = styled.section`
-height: 100vh;
-background-color: rgb(0, 0, 0);af
+height: 60vh;
+/* background-color: rgb(0, 0, 0,0.8); */
+width: 50%;
+
 `;
 
 

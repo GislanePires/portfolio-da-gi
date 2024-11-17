@@ -3,26 +3,14 @@ import styled, { createGlobalStyle } from "styled-components";
 import Header from './Components/Header';
 import About from './Components/About';
 import Footer from './Components/Footer';
-
-const GlobalStyle = createGlobalStyle`
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-
-body{
- 
-  }   
-
-`;
+import * as S from "./GlobalStyle";
 
 
 function App() {
 
   return (
     <>
-    <GlobalStyle />
+    <S.GlobalStyle />
     <Header />
     <About />
     <Footer />
